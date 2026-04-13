@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Krogan Lab — Perturb-seq Reports</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 15px/1.5 system-ui, -apple-system, sans-serif; max-width: 720px; margin: 3rem auto; padding: 0 1.25rem; }
+  h1 { font-size: 1.4rem; margin-bottom: 0.25rem; }
+  .sub { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+  ul { list-style: none; padding: 0; }
+  li { padding: 0.9rem 0; border-top: 1px solid #ddd; }
+  li:last-child { border-bottom: 1px solid #ddd; }
+  a { color: #0366d6; text-decoration: none; font-weight: 500; }
+  a:hover { text-decoration: underline; }
+  .desc { display: block; color: #666; font-size: 0.88rem; margin-top: 0.2rem; }
+  footer { margin-top: 2.5rem; color: #888; font-size: 0.8rem; }
+</style>
+</head>
+<body>
+<h1>Krogan Lab — MDA-MB-468 Perturb-seq Reports</h1>
+<div class="sub">DMSO vs Vorinostat CRISPRi screen · 113 genes · 92 AP-MS bait-prey pairs</div>
+
+<ul>
+  <li>
+    <a href="concordance_robustness.html">Concordance Robustness Report</a>
+    <span class="desc">Definitive sensitivity sweep — Δ correlation vs mssEffect across 108 metric/gene-set combinations. Headline: Z-norm Pearson Union 1K HVGs, 51/76 = 67.1% (p=0.002).</span>
+  </li>
+  <li>
+    <a href="sgrna_robustness.html">sgRNA Robustness Report</a>
+    <span class="desc">Per-sgRNA reproducibility analyses — concordance held at the guide level, not just the gene level.</span>
+  </li>
+  <li>
+    <a href="screen_qc.html">Screen QC Report</a>
+    <span class="desc">Cell recovery, knockdown efficiency, sgRNA assignment, per-channel QC.</span>
+  </li>
+</ul>
+
+<footer>Private — do not share. Refresh after running <code>publish.sh</code> from <code>Krogan_Lab/</code>.</footer>
+</body>
+</html>
