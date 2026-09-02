@@ -15,17 +15,26 @@
   a { color: #0366d6; text-decoration: none; font-weight: 500; }
   a:hover { text-decoration: underline; }
   .desc { display: block; color: #666; font-size: 0.88rem; margin-top: 0.2rem; }
+  .tag { display: inline-block; font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase;
+         border: 1px solid currentColor; border-radius: 3px; padding: 1px 5px; margin-left: 0.5rem;
+         vertical-align: 1px; font-weight: 500; }
+  .tag-new { color: #217F73; }
+  .tag-old { color: #888; }
   footer { margin-top: 2.5rem; color: #888; font-size: 0.8rem; }
 </style>
 </head>
 <body>
 <h1>Krogan Lab — MDA-MB-468 Perturb-seq Reports</h1>
-<div class="sub">DMSO vs Vorinostat CRISPRi screen · 113 genes · 92 AP-MS bait-prey pairs</div>
+<div class="sub">DMSO vs Vorinostat CRISPRi screen · 113 genes · AP-MS bait-prey pairs (92-row table, Aug 2025 → 102-row table, Jun 2026)</div>
 
 <ul>
   <li>
-    <a href="concordance_robustness.html">Concordance Robustness Report</a>
-    <span class="desc">Definitive sensitivity sweep — Δ correlation vs mssEffect across 108 metric/gene-set combinations. Headline: Z-norm Pearson Union 1K HVGs, 51/76 = 67.1% (p=0.002).</span>
+    <a href="concordance_sep2026.html">Concordance on the Corrected PPI Table</a><span class="tag tag-new">Current</span>
+    <span class="desc">Sep 2026 re-run on the 102-row AP-MS table (91 differential + 11 positive controls). Headline: Z-norm Pearson Union 1K HVGs, 54/83 = 65.1% (p=0.004); up/gained 78.3%. Includes the DEG-Jaccard and positive-control-normalised arms, both null.</span>
+  </li>
+  <li>
+    <a href="concordance_robustness.html">Concordance Robustness Report</a><span class="tag tag-old">Superseded</span>
+    <span class="desc">Apr 2026, on the earlier 92-row table. Definitive sensitivity sweep — Δ correlation vs mssEffect. Headline: Z-norm Pearson Union 1K HVGs, 51/76 = 67.1% (p=0.002). Reproduced exactly by the Sep 2026 pipeline as a regression check.</span>
   </li>
   <li>
     <a href="sgrna_robustness.html">sgRNA Robustness Report</a>
