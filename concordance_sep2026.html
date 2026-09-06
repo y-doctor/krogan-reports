@@ -458,6 +458,54 @@ a:focus-visible, [tabindex]:focus-visible { outline:2px solid var(--accent); out
     alt="Paired dot plot of up-DEG Jaccard index for up/gained PPIs"></div>
   <figcaption>Up-DEG Jaccard for strengthened PPIs. The concordance signal lives in whole-profile
     similarity, not in shared discrete DEG calls.</figcaption></figure>
+
+<h3>Which pairs those are &mdash; up-DEG Jaccard</h3>
+<p class="dek">
+  The counts above are aggregates; these are the pairs behind them. Ranked by &Delta;J in
+  each group's own concordant direction &mdash; upward for strengthened PPIs, downward for
+  weakened ones. Full per-pair values for all 83 pairs, including the down-DEG
+  columns, are in <code>Jaccard_UpDown_DEGs_BaitPrey.csv</code>.
+</p>
+
+<h3 style="margin-top:22px">PPI strengthened (up / gained) &mdash; 25/46 concordant</h3>
+<div class="scroll"><table>
+  <thead><tr><th>#</th><th>Pair</th><th>mss</th>
+    <th class="num">J<sub>up</sub> DMSO</th><th class="num">J<sub>up</sub> Vorino</th>
+    <th class="num">&Delta;J<sub>up</sub></th><th>&nbsp;</th></tr></thead>
+  <tbody><tr><td class='rk'>1</td><td class='gene'>YWHAE&ndash;SYNJ2</td><td><span class='chip chip-up'>up</span></td><td class='num'>0.022</td><td class='num'>0.174</td><td class='num delta'>+0.1517</td><td><span class='vd vd-above'>concordant</span></td></tr>
+<tr><td class='rk'>2</td><td class='gene'>BARD1&ndash;CITED2</td><td><span class='chip chip-up'>up</span></td><td class='num'>0.010</td><td class='num'>0.139</td><td class='num delta'>+0.1285</td><td><span class='vd vd-above'>concordant</span></td></tr>
+<tr><td class='rk'>3</td><td class='gene'>YWHAE&ndash;TK1</td><td><span class='chip chip-up'>gained</span></td><td class='num'>0.017</td><td class='num'>0.131</td><td class='num delta'>+0.1146</td><td><span class='vd vd-above'>concordant</span></td></tr>
+<tr><td class='rk'>4</td><td class='gene'>YWHAE&ndash;HAT1</td><td><span class='chip chip-up'>up</span></td><td class='num'>0.000</td><td class='num'>0.096</td><td class='num delta'>+0.0957</td><td><span class='vd vd-above'>concordant</span></td></tr>
+<tr><td class='rk'>5</td><td class='gene'>AURKB&ndash;CSRP2</td><td><span class='chip chip-up'>up</span></td><td class='num'>0.062</td><td class='num'>0.155</td><td class='num delta'>+0.0923</td><td><span class='vd vd-above'>concordant</span></td></tr>
+<tr><td class='rk'>6</td><td class='gene'>AURKB&ndash;CCN1</td><td><span class='chip chip-up'>up</span></td><td class='num'>0.000</td><td class='num'>0.075</td><td class='num delta'>+0.0746</td><td><span class='vd vd-above'>concordant</span></td></tr>
+<tr><td class='rk'>7</td><td class='gene'>SMARCA4&ndash;EPS15</td><td><span class='chip chip-up'>up</span></td><td class='num'>0.015</td><td class='num'>0.085</td><td class='num delta'>+0.0694</td><td><span class='vd vd-above'>concordant</span></td></tr>
+<tr><td class='rk'>8</td><td class='gene'>YWHAQ&ndash;PFKFB2</td><td><span class='chip chip-up'>up</span></td><td class='num'>0.000</td><td class='num'>0.062</td><td class='num delta'>+0.0625</td><td><span class='vd vd-above'>concordant</span></td></tr>
+<tr><td class='rk'>9</td><td class='gene'>YWHAE&ndash;PAK1</td><td><span class='chip chip-up'>gained</span></td><td class='num'>0.018</td><td class='num'>0.077</td><td class='num delta'>+0.0591</td><td><span class='vd vd-above'>concordant</span></td></tr>
+<tr><td class='rk'>10</td><td class='gene'>YWHAG&ndash;EML3</td><td><span class='chip chip-up'>up</span></td><td class='num'>0.000</td><td class='num'>0.057</td><td class='num delta'>+0.0571</td><td><span class='vd vd-above'>concordant</span></td></tr></tbody>
+</table></div>
+
+<h3>PPI weakened (down / lost) &mdash; 15/37 concordant</h3>
+<div class="scroll"><table>
+  <thead><tr><th>#</th><th>Pair</th><th>mss</th>
+    <th class="num">J<sub>up</sub> DMSO</th><th class="num">J<sub>up</sub> Vorino</th>
+    <th class="num">&Delta;J<sub>up</sub></th><th>&nbsp;</th></tr></thead>
+  <tbody><tr><td class='rk'>1</td><td class='gene'>YWHAQ&ndash;FAM184B</td><td><span class='chip chip-dn'>lost</span></td><td class='num'>0.154</td><td class='num'>0.026</td><td class='num delta'>-0.1275</td><td><span class='vd vd-above'>concordant</span></td></tr>
+<tr><td class='rk'>2</td><td class='gene'>PRMT1&ndash;FAM184B</td><td><span class='chip chip-dn'>lost</span></td><td class='num'>0.067</td><td class='num'>0.000</td><td class='num delta'>-0.0667</td><td><span class='vd vd-above'>concordant</span></td></tr>
+<tr><td class='rk'>3</td><td class='gene'>HDAC2&ndash;RBBP4</td><td><span class='chip chip-dn'>down</span></td><td class='num'>0.064</td><td class='num'>0.000</td><td class='num delta'>-0.0638</td><td><span class='vd vd-above'>concordant</span></td></tr>
+<tr><td class='rk'>4</td><td class='gene'>MORF4L1&ndash;BRD8</td><td><span class='chip chip-dn'>down</span></td><td class='num'>0.057</td><td class='num'>0.000</td><td class='num delta'>-0.0566</td><td><span class='vd vd-above'>concordant</span></td></tr>
+<tr><td class='rk'>5</td><td class='gene'>HDAC2&ndash;HMG20B</td><td><span class='chip chip-dn'>down</span></td><td class='num'>0.042</td><td class='num'>0.000</td><td class='num delta'>-0.0423</td><td><span class='vd vd-above'>concordant</span></td></tr>
+<tr><td class='rk'>6</td><td class='gene'>MSL1&ndash;KAT8</td><td><span class='chip chip-dn'>down</span></td><td class='num'>0.038</td><td class='num'>0.000</td><td class='num delta'>-0.0382</td><td><span class='vd vd-above'>concordant</span></td></tr>
+<tr><td class='rk'>7</td><td class='gene'>BARD1&ndash;ARPC3</td><td><span class='chip chip-dn'>down</span></td><td class='num'>0.058</td><td class='num'>0.021</td><td class='num delta'>-0.0367</td><td><span class='vd vd-above'>concordant</span></td></tr>
+<tr><td class='rk'>8</td><td class='gene'>BAP1&ndash;ARPC1B</td><td><span class='chip chip-dn'>down</span></td><td class='num'>0.042</td><td class='num'>0.011</td><td class='num delta'>-0.0303</td><td><span class='vd vd-above'>concordant</span></td></tr>
+<tr><td class='rk'>9</td><td class='gene'>PPP1CC&ndash;GAK</td><td><span class='chip chip-dn'>down</span></td><td class='num'>0.022</td><td class='num'>0.000</td><td class='num delta'>-0.0221</td><td><span class='vd vd-above'>concordant</span></td></tr>
+<tr><td class='rk'>10</td><td class='gene'>BRPF1&ndash;CPSF3</td><td><span class='chip chip-dn'>down</span></td><td class='num'>0.019</td><td class='num'>0.000</td><td class='num delta'>-0.0187</td><td><span class='vd vd-above'>concordant</span></td></tr></tbody>
+</table></div>
+<p class="ledger-note">
+  Jaccard indices here are small in absolute terms (mostly 0&ndash;0.18): bait and prey
+  knockdowns share only a handful of discrete DEG calls even when their whole profiles
+  correlate. Several pairs sit at exactly 0.000 in one condition, which is why the sign
+  test in the table above runs on non-zero &Delta;J only.
+</p>
 <div class="note warn"><p>
   <strong>The Jaccard producer had to be rewritten.</strong> The original was run ad hoc and never
   saved, leaving its output files orphaned. The new script reproduces the archived April
