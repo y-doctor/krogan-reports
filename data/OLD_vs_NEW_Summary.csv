@@ -1,0 +1,3 @@
+table,corr_n,corr_conc,corr_pct,corr_p,up_n,up_conc,up_pct,dn_n,dn_conc,dn_pct,sweep_sig,jac_n,jac_pct,jac_p
+OLD (92-row table),76,51,67.1,0.0019181178758073,41,32,78.0,35,19,54.3,50/153,76,50.0,0.546
+NEW (102-row table),83,54,65.1,0.0040183531889285,46,36,78.3,37,18,48.6,45/153,83,49.4,0.587
