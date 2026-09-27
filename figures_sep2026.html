@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Krogan Lab &mdash; Finalised Figure Panels</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  :root { color-scheme: light dark; --ink:#15171F; --ink2:#41455A; --ink3:#7A7E93;
+           --rule:#DEDEE7; --bg:#fff; --card:#FAFAFC; }
+  @media (prefers-color-scheme: dark) { :root { --ink:#E8E8EF; --ink2:#B6BACB;
+           --ink3:#8A8FA3; --rule:#2C2F3D; --bg:#15171F; --card:#1C1F2A; } }
+  body { font:15px/1.6 system-ui,-apple-system,sans-serif; max-width:960px;
+          margin:3rem auto; padding:0 1.25rem; color:var(--ink); background:var(--bg); }
+  h1 { font-size:1.45rem; margin-bottom:.25rem; }
+  .sub { color:var(--ink3); font-size:.9rem; margin-bottom:2rem; }
+  h2 { font-size:1rem; text-transform:uppercase; letter-spacing:.07em;
+        color:var(--ink3); border-bottom:1px solid var(--rule);
+        padding-bottom:.4rem; margin:2.5rem 0 1.25rem; }
+  figure { margin:0 0 2.5rem; background:var(--card); border:1px solid var(--rule);
+            border-radius:8px; padding:1rem 1rem .75rem; }
+  figcaption { margin-bottom:.85rem; }
+  .pl { display:inline-block; font-weight:700; font-size:.95rem; background:var(--ink);
+         color:var(--bg); border-radius:4px; padding:1px 8px; margin-right:.6rem; }
+  .ft { font-weight:600; }
+  .meta { display:block; color:var(--ink3); font-size:.78rem; margin-top:.3rem; }
+  .note { display:block; color:var(--ink2); font-size:.83rem; margin-top:.45rem; }
+  img { width:100%; height:auto; display:block; background:#fff; border-radius:4px; }
+  .dl { margin-top:.7rem; display:flex; gap:.6rem; flex-wrap:wrap; }
+  .dl a { font-size:.78rem; text-decoration:none; color:#0366d6; border:1px solid var(--rule);
+           border-radius:5px; padding:.28rem .6rem; }
+  .dl a:hover { background:var(--rule); }
+  .dl span { color:var(--ink3); }
+  code { font-size:.92em; }
+  footer { margin-top:3rem; padding-top:1rem; border-top:1px solid var(--rule);
+            color:var(--ink3); font-size:.8rem; }
+  a.back { color:#0366d6; text-decoration:none; }
+</style></head><body>
+<h1>Finalised Figure Panels</h1>
+<div class="sub">MDA-MB-468 Perturb-seq, DMSO vs Vorinostat &middot; 102-row AP-MS table
+(Jun 2026) &middot; generated 2026-09-27</div>
+<section><h2>Main figure panels</h2>
+<figure id="BaitPrey_PairedDot_UpGained">
+  <figcaption>
+    <span class="pl">c</span>
+    <span class="ft">Up/Gained PPIs &mdash; bait&ndash;prey correlation, DMSO &rarr; Vorinostat</span>
+    <span class="meta">94 &times; 102 mm &middot; 300 dpi &middot; <code>BaitPrey_PairedDot_UpGained</code></span>
+    <span class="note">Pearson r on NTC-normalised pseudobulk, union top-1K HVGs (1,861 genes). Top 5 by &Delta;r keyed by rank. 36/46 move as AP-MS predicts.</span>
+  </figcaption>
+  <img src="figures/BaitPrey_PairedDot_UpGained.png" alt="BaitPrey_PairedDot_UpGained" loading="lazy">
+  <div class="dl">
+    <a href="figures/BaitPrey_PairedDot_UpGained.png" download>PNG <span>223 KB</span></a>
+    <a href="figures/BaitPrey_PairedDot_UpGained.svg" download>SVG <span>39 KB</span></a>
+  </div>
+</figure>
+<figure id="BaitPrey_PairedDot_DownLost">
+  <figcaption>
+    <span class="pl">d</span>
+    <span class="ft">Down/Lost PPIs &mdash; bait&ndash;prey correlation, DMSO &rarr; Vorinostat</span>
+    <span class="meta">93 &times; 102 mm &middot; 300 dpi &middot; <code>BaitPrey_PairedDot_DownLost</code></span>
+    <span class="note">Same measure and feature set as panel c. 18/37 move as AP-MS predicts.</span>
+  </figcaption>
+  <img src="figures/BaitPrey_PairedDot_DownLost.png" alt="BaitPrey_PairedDot_DownLost" loading="lazy">
+  <div class="dl">
+    <a href="figures/BaitPrey_PairedDot_DownLost.png" download>PNG <span>183 KB</span></a>
+    <a href="figures/BaitPrey_PairedDot_DownLost.svg" download>SVG <span>33 KB</span></a>
+  </div>
+</figure>
+<figure id="BaitPrey_DeltaR_Violin_PPIeffect">
+  <figcaption>
+    <span class="pl">e</span>
+    <span class="ft">&Delta;r distribution, split by AP-MS direction</span>
+    <span class="meta">60 &times; 104 mm &middot; 300 dpi &middot; <code>BaitPrey_DeltaR_Violin_PPIeffect</code></span>
+    <span class="note">Two-tailed one-sample Wilcoxon signed-rank against zero. Up/Gained p = 7.9e-06; Down/Lost p = 0.94.</span>
+  </figcaption>
+  <img src="figures/BaitPrey_DeltaR_Violin_PPIeffect.png" alt="BaitPrey_DeltaR_Violin_PPIeffect" loading="lazy">
+  <div class="dl">
+    <a href="figures/BaitPrey_DeltaR_Violin_PPIeffect.png" download>PNG <span>74 KB</span></a>
+    <a href="figures/BaitPrey_DeltaR_Violin_PPIeffect.svg" download>SVG <span>29 KB</span></a>
+  </div>
+</figure>
+<figure id="Permutation_UpGained_PanelF">
+  <figcaption>
+    <span class="pl">f</span>
+    <span class="ft">Permutation tests, Up/Gained concordance</span>
+    <span class="meta">84 &times; 117 mm &middot; 300 dpi &middot; <code>Permutation_UpGained_PanelF</code></span>
+    <span class="note">10,000 permutations each. Label shuffle: null 66.2%, observed 78.3%, z = 2.5, p = 0.0102. Random gene pairs: null 63.9%, z = 2.0, p = 0.0273.</span>
+  </figcaption>
+  <img src="figures/Permutation_UpGained_PanelF.png" alt="Permutation_UpGained_PanelF" loading="lazy">
+  <div class="dl">
+    <a href="figures/Permutation_UpGained_PanelF.png" download>PNG <span>134 KB</span></a>
+    <a href="figures/Permutation_UpGained_PanelF.svg" download>SVG <span>31 KB</span></a>
+  </div>
+</figure>
+<figure id="sgRNA_PanelG_Violins">
+  <figcaption>
+    <span class="pl">g</span>
+    <span class="ft">All pairwise sgRNA combinations, 7 significant pairs</span>
+    <span class="meta">131 &times; 107 mm &middot; 300 dpi &middot; <code>sgRNA_PanelG_Violins</code></span>
+    <span class="note">Every (bait guide &times; prey guide) combination, per condition. Paired t-test, DMSO vs Vorinostat, uncorrected.</span>
+  </figcaption>
+  <img src="figures/sgRNA_PanelG_Violins.png" alt="sgRNA_PanelG_Violins" loading="lazy">
+  <div class="dl">
+    <a href="figures/sgRNA_PanelG_Violins.png" download>PNG <span>217 KB</span></a>
+    <a href="figures/sgRNA_PanelG_Violins.svg" download>SVG <span>121 KB</span></a>
+  </div>
+</figure>
+<figure id="Jaccard_PanelI_UpGained">
+  <figcaption>
+    <span class="pl">i</span>
+    <span class="ft">DEG-set Jaccard on up-regulated DEGs, Up/Gained PPIs</span>
+    <span class="meta">89 &times; 102 mm &middot; 300 dpi &middot; <code>Jaccard_PanelI_UpGained</code></span>
+    <span class="note">Jaccard index per condition; concordant = higher under Vorinostat. 25/46 concordant; binomial vs 50% p = 0.33.</span>
+  </figcaption>
+  <img src="figures/Jaccard_PanelI_UpGained.png" alt="Jaccard_PanelI_UpGained" loading="lazy">
+  <div class="dl">
+    <a href="figures/Jaccard_PanelI_UpGained.png" download>PNG <span>194 KB</span></a>
+    <a href="figures/Jaccard_PanelI_UpGained.svg" download>SVG <span>38 KB</span></a>
+  </div>
+</figure></section><section><h2>Supplementary</h2>
+<figure id="sgRNA_PanelG_Violins_AtOrAbove">
+  <figcaption>
+    <span class="pl">SI</span>
+    <span class="ft">Each pair against its AP-MS positive control</span>
+    <span class="meta">171 &times; 133 mm &middot; 300 dpi &middot; <code>sgRNA_PanelG_Violins_AtOrAbove</code></span>
+    <span class="note">One-tailed Welch t-test, H1: pair &lt; control, per condition. Vorinostat 6/6 not detectably below; DMSO 4/6. HDAC7&ndash;CTTNBP2NL is absent because it is its own positive control.</span>
+  </figcaption>
+  <img src="figures/sgRNA_PanelG_Violins_AtOrAbove.png" alt="sgRNA_PanelG_Violins_AtOrAbove" loading="lazy">
+  <div class="dl">
+    <a href="figures/sgRNA_PanelG_Violins_AtOrAbove.png" download>PNG <span>389 KB</span></a>
+    <a href="figures/sgRNA_PanelG_Violins_AtOrAbove.svg" download>SVG <span>181 KB</span></a>
+  </div>
+</figure>
+<figure id="sgRNA_PanelG_Violins_PosCtl">
+  <figcaption>
+    <span class="pl">&mdash;</span>
+    <span class="ft">Pair vs control, DMSO &rarr; Vorinostat move</span>
+    <span class="meta">152 &times; 125 mm &middot; 300 dpi &middot; <code>sgRNA_PanelG_Violins_PosCtl</code></span>
+    <span class="note">Alternative framing of the same six comparisons: paired t-test within each pair and within each control.</span>
+  </figcaption>
+  <img src="figures/sgRNA_PanelG_Violins_PosCtl.png" alt="sgRNA_PanelG_Violins_PosCtl" loading="lazy">
+  <div class="dl">
+    <a href="figures/sgRNA_PanelG_Violins_PosCtl.png" download>PNG <span>357 KB</span></a>
+    <a href="figures/sgRNA_PanelG_Violins_PosCtl.svg" download>SVG <span>181 KB</span></a>
+  </div>
+</figure></section><section><h2>Supporting / superseded</h2>
+<figure id="Permutation_Concordance_v2">
+  <figcaption>
+    <span class="pl">&mdash;</span>
+    <span class="ft">All three null schemes &times; both concordance metrics</span>
+    <span class="meta">235 &times; 119 mm &middot; 300 dpi &middot; <code>Permutation_Concordance_v2</code></span>
+    <span class="note">Includes the cell-shuffle null, which is not shown in panel f (Up/Gained: null 69.3%, z = 1.26, p = 0.128).</span>
+  </figcaption>
+  <img src="figures/Permutation_Concordance_v2.png" alt="Permutation_Concordance_v2" loading="lazy">
+  <div class="dl">
+    <a href="figures/Permutation_Concordance_v2.png" download>PNG <span>334 KB</span></a>
+    <a href="figures/Permutation_Concordance_v2.svg" download>SVG <span>83 KB</span></a>
+  </div>
+</figure>
+<figure id="Permutation_Jaccard_v2">
+  <figcaption>
+    <span class="pl">&mdash;</span>
+    <span class="ft">DEG-Jaccard label-shuffle null</span>
+    <span class="meta">156 &times; 79 mm &middot; 300 dpi &middot; <code>Permutation_Jaccard_v2</code></span>
+    <span class="note">Both metrics non-significant.</span>
+  </figcaption>
+  <img src="figures/Permutation_Jaccard_v2.png" alt="Permutation_Jaccard_v2" loading="lazy">
+  <div class="dl">
+    <a href="figures/Permutation_Jaccard_v2.png" download>PNG <span>170 KB</span></a>
+    <a href="figures/Permutation_Jaccard_v2.svg" download>SVG <span>31 KB</span></a>
+  </div>
+</figure>
+<figure id="Definitive_Heatmap_Overall">
+  <figcaption>
+    <span class="pl">&mdash;</span>
+    <span class="ft">Sensitivity sweep &mdash; 3 normalisations &times; 3 metrics &times; 17 gene sets</span>
+    <span class="meta">179 &times; 126 mm &middot; 300 dpi &middot; <code>Definitive_Heatmap_Overall</code></span>
+    <span class="note">153 processing combinations.</span>
+  </figcaption>
+  <img src="figures/Definitive_Heatmap_Overall.png" alt="Definitive_Heatmap_Overall" loading="lazy">
+  <div class="dl">
+    <a href="figures/Definitive_Heatmap_Overall.png" download>PNG <span>293 KB</span></a>
+    <a href="figures/Definitive_Heatmap_Overall.svg" download>SVG <span>67 KB</span></a>
+  </div>
+</figure>
+<figure id="PosCtl_Forest_Top10">
+  <figcaption>
+    <span class="pl">&mdash;</span>
+    <span class="ft">Positive-control-normalised difference, top 10 by each method</span>
+    <span class="meta">226 &times; 129 mm &middot; 300 dpi &middot; <code>PosCtl_Forest_Top10</code></span>
+    <span class="note">Bootstrap 95% CI over 2,000 gene resamples.</span>
+  </figcaption>
+  <img src="figures/PosCtl_Forest_Top10.png" alt="PosCtl_Forest_Top10" loading="lazy">
+  <div class="dl">
+    <a href="figures/PosCtl_Forest_Top10.png" download>PNG <span>340 KB</span></a>
+    <a href="figures/PosCtl_Forest_Top10.svg" download>SVG <span>69 KB</span></a>
+  </div>
+</figure>
+<figure id="sgRNA_DeltaR_Violin_PPIeffect">
+  <figcaption>
+    <span class="pl">&mdash;</span>
+    <span class="ft">&Delta;r at the guide level, split by AP-MS direction</span>
+    <span class="meta">97 &times; 136 mm &middot; 300 dpi &middot; <code>sgRNA_DeltaR_Violin_PPIeffect</code></span>
+    
+  </figcaption>
+  <img src="figures/sgRNA_DeltaR_Violin_PPIeffect.png" alt="sgRNA_DeltaR_Violin_PPIeffect" loading="lazy">
+  <div class="dl">
+    <a href="figures/sgRNA_DeltaR_Violin_PPIeffect.png" download>PNG <span>202 KB</span></a>
+    <a href="figures/sgRNA_DeltaR_Violin_PPIeffect.svg" download>SVG <span>111 KB</span></a>
+  </div>
+</figure>
+<figure id="sgRNA_PerPair_Slopegraph">
+  <figcaption>
+    <span class="pl">&mdash;</span>
+    <span class="ft">Per-pair guide-combination slopegraph</span>
+    <span class="meta">184 &times; 102 mm &middot; 300 dpi &middot; <code>sgRNA_PerPair_Slopegraph</code></span>
+    
+  </figcaption>
+  <img src="figures/sgRNA_PerPair_Slopegraph.png" alt="sgRNA_PerPair_Slopegraph" loading="lazy">
+  <div class="dl">
+    <a href="figures/sgRNA_PerPair_Slopegraph.png" download>PNG <span>276 KB</span></a>
+    <a href="figures/sgRNA_PerPair_Slopegraph.svg" download>SVG <span>62 KB</span></a>
+  </div>
+</figure></section>
+<footer>
+  Panels are exported at 300 dpi as PNG (downsampled to 200 dpi for download) and as
+  vector SVG at full resolution. Sizes are the rendered physical size.
+  <br><a class="back" href="./">&larr; all reports</a>
+</footer>
+</body></html>
